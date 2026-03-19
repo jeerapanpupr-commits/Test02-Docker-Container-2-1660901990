@@ -14,7 +14,7 @@ services:
     networks:
       - backend-zone  # (1.6) ต้องเชื่อมกับวงปิดสำหรับ DB
     volumes:
-      - db-storage:var/lib/mysql  # (1.7) เติมชื่อจาก Named Volume [9]
+      - db-storage:/var/lib/mysql  # (1.7) เติมชื่อจาก Named Volume [9]
     secrets:
       - db_pass # (1.8) เติมชื่อ Secret ที่ประกาศด้านล่าง [10]
 
